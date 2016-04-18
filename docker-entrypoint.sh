@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Create the hash to pass to the IPython notebook, but don't export it so it doesn't appear
 # as an environment variable within IPython kernels themselves
-HASH=$(python -c "from IPython.lib import passwd; print(passwd('${PASSWORD:-admin}'))")
+HASH=$(python -c "from IPython.lib import passwd; print(passwd('${PASSWORD:Solu!123}'))")
 
 echo "========================================================================"
 echo "You can now connect to this Ipython Notebook server using, for example:"
